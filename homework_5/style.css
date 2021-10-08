@@ -1,0 +1,148 @@
+HTML,
+body,
+p {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+body {
+  font-family: "Inter";
+  overflow-x: hidden;
+}
+
+.container {
+  /* display: flex;
+  justify-content: flex-start;
+  flex-direction: column; */
+  background-color: black;
+}
+
+/* CSS for popup div, for font to be in the center and be specific style
+and weight, added a property for the background image aswell */
+
+.popup {
+  width: 100%;
+  height: 45px;
+  display: block;
+  position: relative;
+
+  background-image: url("popupbackground.png");
+}
+
+.popup p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 19.36px;
+  letter-spacing: -0.6px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  text-transform: uppercase;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+}
+
+.navigation {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-color: aqua;
+}
+
+/* BANNER IMAGE */
+.banner {
+  display: block;
+  max-width: 100%;
+  height: 270px;
+  background-color: bisque;
+  margin-left: 2%;
+  margin-right: 2%;
+  position: relative;
+  overflow: hidden;
+}
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+/* PERFECT SLEEP EXISTS TEXT */
+.banner p {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 73px;
+  /* identical to box height */
+
+  letter-spacing: -0.6px;
+
+  color: #ffffff;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.collections {
+  width: 100%;
+  height: 450px;
+  background-color: blue;
+}
+
+.handpicked {
+  width: 50%;
+  float: left;
+  height: 450px;
+  background-color: blueviolet;
+}
+
+.pillowtypes {
+  width: 50%;
+  float: right;
+  height: 450px;
+  background-color: brown;
+}
+
+.whycontainer {
+  width: 100%;
+  height: 700px;
+  background-color: red;
+}
+
+.whyimage {
+  width: 50%;
+  float: left;
+  height: 450px;
+  background-color: greenyellow;
+}
+
+.whyfeatures {
+  width: 50%;
+  float: right;
+  height: 450px;
+  background-color: violet;
+}
+
+.footer {
+  width: 100%;
+  height: 250px;
+  background-color: green;
+}
+
+.footer img {
+  width: 100%;
+  height: auto;
+}
