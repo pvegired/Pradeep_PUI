@@ -131,21 +131,8 @@ nav a {
 
 nav a:hover {
   background: white;
-  color: grey;
+  color: blue;
   font-weight: 800;
-}
-
-nav a:checked {
-  background: white;
-  color: grey;
-  font-weight: bolder;
-}
-
-#navunderline {
-  background: white;
-  color: grey;
-  font-weight: bolder;
-  text-decoration: underline;
 }
 
 /* 
@@ -391,7 +378,7 @@ align vertically to images */
 }
 
 /* css for each pillow type text styling */
-#pillowtype {
+.pillowtype {
   font-size: 0.8em;
   margin: 1em;
 }
@@ -529,7 +516,7 @@ that make fluffstuff unique */
 
 /* css for shop all button default
 styling and onhover styling  */
-#filteroption {
+.filteroption {
   padding: 0.4em 0.4em 0.4em 0.4em;
   font-size: 0.75em;
   color: black;
@@ -537,7 +524,7 @@ styling and onhover styling  */
   border: solid black;
 }
 
-#filteroption:hover {
+.filteroption:hover {
   color: white;
   background-color: black;
 }
