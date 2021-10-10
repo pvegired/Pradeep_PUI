@@ -131,8 +131,21 @@ nav a {
 
 nav a:hover {
   background: white;
-  color: blue;
+  color: grey;
   font-weight: 800;
+}
+
+nav a:checked {
+  background: white;
+  color: grey;
+  font-weight: bolder;
+}
+
+#navunderline {
+  background: white;
+  color: grey;
+  font-weight: bolder;
+  text-decoration: underline;
 }
 
 /* 
