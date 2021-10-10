@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
     <title>Fluff Stuff</title>
 </head>
@@ -29,44 +29,77 @@
         </nav>
     </div>
     <div class = "banner">
-        <img src="bannerimage.png" alt="Woman sleeping on pillow">
+        <img src="images/bannerimage.png" alt="Woman sleeping on pillow">
         <p>Perfect sleep exists</p>
     </div>
     <div class = "collections">
         <div class = "handpicked">
-            <p>Hand Picked Collection</p>
+            <p class="handpickedtitle">Hand Picked Collection</p>
             <div class="shopcollection">
-                <ul>
-                    <li><img src="images/h1.png" alt="yellow pillow" srcset=""></li>
-                    <li><img src="images/h2.png" alt="black pillow" srcset=""></li>
-                    <li><img src="images/h3.png" alt="white pillow" srcset=""></li>
-                </ul>
-                <p>Shop All</p>
+                <div class="imagesrow">
+                    <ul>
+                        <!-- <li><img src="images/leftarrow.png" alt="left arrow" srcset="" width="20" height="20"></li> -->
+                        <li><a href="#!"><img src="images/h1.png" alt="yellow pillow" srcset="" width="180" height="180"></a></li>
+                        <li><a href="#!"><img src="images/h2.png" alt="black pillow" srcset="" width="180" height="180"></a></li>
+                        <li><a href="#!"><img src="images/h3.png" alt="white pillow" srcset="" width="180" height="180"></a></li>
+                        <!-- <li><img src="images/rightarrow.png" alt="right arrow" srcset="" width="20" height="20"></li> -->
+                    </ul>
+                </div>
+                <div class="shopallbutton">
+                    <p><a href="productbrowsing.html" id="shopall">Shop All</a></p>
+                </div>
             </div>
         </div>
-        <div class = "pillowtypes">
-            <p>Shop Different Pillow Types</p>
+        <div class="pillowtypes">
+            <p class="pillowtypestitle">Shop Different Pillow Types</p>
             <div class="types">
-                <ul>
-                    <li><img src="images/t1.png" alt="yellow pillow" srcset=""></li>
-                    <li><img src="images/t2.png" alt="black pillow" srcset=""></li>
-                    <li><img src="images/t3.png" alt="white pillow" srcset=""></li>
-                    <li><img src="images/t4.png" alt="white pillow" srcset=""></li>
-                </ul>
+                <div class="typesrow">
+                    <ul>
+                        <li>
+                            <img src="images/t1.png" alt="yellow pillow" srcset="" width="230" height="130">
+                            <div class="pillowtypebutton">
+                                <p><a href="productbrowsing.html" id="pillowtype">Couch Pillow</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/t3.png" alt="yellow pillow" srcset="" width="230" height="130">
+                            <div class="pillowtypebutton">
+                                <p><a href="productbrowsing.html" id="pillowtype">Round Pillow</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img src="images/t2.png" alt="yellow pillow" srcset="" width="230" height="130">
+                            <div class="pillowtypebutton">
+                                <p><a href="productbrowsing.html" id="pillowtype">Bed Pillow</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/t4.png" alt="yellow pillow" srcset="" width="230" height="130">
+                            <div class="pillowtypebutton">
+                                <p><a href="productbrowsing.html" id="pillowtype">Floor Pillow</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-    <div class = "whycontainer">
-        <p>Why Fluff Stuff?</p>
-        <div class="whyimage">
-            <img src="images/fancyimage.png" alt="fancy pillow design" srcset="">
+    <div class="why">
+        <div class = "whycontainer">
+            <p class="whyfluffstuff">Why Fluff Stuff?</p>
+            <div class="whyimage">
+                <img src="images/fancyimage.png" alt="fancy pillow design" srcset="" width="518" height="518">
+            </div>
         </div>
         <div class="whyfeatures">
-            <p>features</p>
+                <p>features</p>
+        </div>
         </div>
     </div>
     <div class = "footer">
-        <img src="footer.png" alt="newsletter">
+        <img src="images/footer.png" alt="newsletter">
     </div>
     
 </body>
