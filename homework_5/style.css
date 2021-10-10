@@ -489,7 +489,6 @@ that make fluffstuff unique */
   margin-left: 2%;
   margin-right: 2%;
   margin-top: 1em;
-  background-color: tomato;
 }
 
 .filteroptions ul {
@@ -533,13 +532,11 @@ styling and onhover styling  */
   margin-left: 2%;
   margin-right: 2%;
   height: 60em;
-  background-color: turquoise;
 }
 
 .productsrow ul {
   display: flex;
   flex-direction: row;
-  background-color: violet;
   justify-content: space-evenly;
   margin-top: 1em;
 }
@@ -548,17 +545,14 @@ styling and onhover styling  */
   list-style: none;
 }
 
-/* #productimage {
-  display: flex;
-  flex-direction: column;
-} */
-
 #productimage ul {
-  display: flex;
-  flex-direction: row;
-  background-color: yellowgreen;
-  justify-content: left;
-  margin: 2px;
+  /* display: flex;
+  flex-direction: row; */
+  /* justify-content: flex-start; */
+}
+
+#productimage ul li {
+  margin: 0.2em;
 }
 
 /* *************************** PRODUCT DETAIL PAGE ONLY ********************************************/
