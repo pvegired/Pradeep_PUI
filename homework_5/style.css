@@ -135,6 +135,11 @@ nav a:hover {
   font-weight: 800;
 }
 
+#selected {
+  color: grey;
+  text-decoration: underline;
+}
+
 /* 
                                                          FOOTER
  */
@@ -612,8 +617,8 @@ that make fluffstuff unique */
   font-family: Inter;
   font-style: normal;
   font-weight: 600;
-  font-size: 1.2em;
-  line-height: 1.2em;
+  font-size: 1em;
+  line-height: 1em;
   letter-spacing: 0em;
   color: #000000;
   left: 22%;
@@ -665,7 +670,7 @@ that make fluffstuff unique */
   padding: 0.2em 0.4em 0.2em 0.4em;
   border-style: solid;
   border-color: black;
-  font-size: 2em;
+  font-size: 1.5em;
   color: white;
   background-color: black;
 }
