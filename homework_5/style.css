@@ -576,23 +576,10 @@ styling and onhover styling  */
   width: 46%;
   float: left;
   background-color: white;
-  margin-top: 0.5em;
+  margin-top: 4em;
   margin-bottom: 0.5em;
   margin-left: 2%;
   margin-right: 2%;
-}
-
-/* css for why fluff stuff title */
-.largeimage p {
-  float: left;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1.2em;
-  line-height: 1.2em;
-  letter-spacing: 0em;
-  color: #000000;
-  left: 22%;
 }
 
 /* css for fancy image to be 
@@ -653,4 +640,37 @@ that make fluffstuff unique */
 
 #selectedimage {
   border: 0.1em solid black;
+}
+
+.productdetails h3 {
+  color: grey;
+}
+
+.productdetails ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.productdetails ul li {
+  margin: 0.2em;
+}
+
+/* css just for logo and logo hover change  */
+.buybutton {
+  position: relative;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0.2em;
+  padding: 0.2em 0.4em 0.2em 0.4em;
+  border-style: solid;
+  border-color: black;
+  font-size: 2em;
+  color: white;
+  background-color: black;
+}
+
+.buybutton:hover {
+  color: white;
+  border: 0.05em solid black;
 }
