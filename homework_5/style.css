@@ -679,3 +679,51 @@ that make fluffstuff unique */
   color: white;
   border: 0.05em solid black;
 }
+
+/* *************************** PICKING ASSISTANT PAGE ONLY ********************************************/
+
+.questionnaire {
+  margin-left: 2em;
+  /* display: flex;
+  flex-direction: column;
+  width: 46%;
+  float: left;
+  margin-top: 5em;
+  margin-bottom: 0.5em;
+  margin-left: 2%;
+  margin-right: 2%; */
+}
+
+/* css for explaining the features
+that make fluffstuff unique */
+.questionnaire p {
+  display: flex;
+  float: left;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 1em;
+  letter-spacing: 0em;
+  color: #000000;
+  left: 22%;
+  padding: 1em 1em 1em 1em;
+  border: 0.05em solid black;
+}
+
+/* css for shop all button default
+styling and onhover styling  */
+#showallrecommendations {
+  padding: 0.4em 0.4em 0.4em 0.4em;
+  font-size: 0.75em;
+  color: white;
+  background-color: black;
+  margin-left: 2em;
+  margin-bottom: 2em;
+}
+
+#showallrecommendations:hover {
+  color: black;
+  background-color: White;
+  border: solid black;
+}
