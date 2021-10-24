@@ -723,3 +723,153 @@ styling and onhover styling  */
   background-color: White;
   border: solid black;
 }
+
+/* *************************** CART PAGE ONLY ********************************************/
+.product-image {
+  float: left;
+  width: 20%;
+}
+.product-details {
+  float: left;
+  width: 37%;
+}
+.product-price {
+  float: left;
+  width: 12%;
+}
+.product-quantity {
+  float: left;
+  width: 10%;
+}
+.product-removal {
+  float: left;
+  width: 9%;
+}
+.product-line-price {
+  float: left;
+  width: 12%;
+  text-align: right;
+}
+
+/* This is used as the traditional .clearfix class */
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  zoom: 1;
+}
+
+/* label {
+  color: $color-label;
+} */
+
+.shopping-cart {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+/* Column headers */
+.column-labels .label {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid;
+}
+.column-labels.product-image,
+.column-labels.product-details,
+.column-labels.product-removal {
+  text-indent: -9999px;
+}
+
+/* Product entries */
+.product {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid;
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.product .remove-product {
+  border: 0;
+  padding: 4px 8px;
+  background-color: #c66;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 3px;
+  display: inline-flex;
+}
+
+.product .remove-product:hover {
+  background-color: #a44;
+}
+
+.product .product-image {
+  text-align: center;
+}
+
+.product .product-image img {
+  width: 100px;
+}
+
+.product .product-details .product-title {
+  margin-right: 20px;
+  display: inline-flex;
+}
+.product .product-details .product-description {
+  margin: 5px 20px 5px 0;
+  line-height: 1.4em;
+  display: inline-flex;
+}
+
+.product .product-quantity input {
+  width: 40px;
+}
+
+/* Totals section */
+.totals .totals-item {
+  float: right;
+  clear: both;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.totals label {
+  float: left;
+  clear: both;
+  width: 79%;
+  text-align: right;
+}
+
+.totals .totals-value {
+  float: right;
+  width: 21%;
+  text-align: right;
+}
+
+/* .totals .totals-item-total {
+    font-family: $font-bold;
+  }
+} */
+
+.checkout {
+  float: right;
+  border: 0;
+  margin-top: 20px;
+  padding: 6px 25px;
+  background-color: #6b6;
+  color: #fff;
+  font-size: 25px;
+  border-radius: 3px;
+}
+
+.checkout:hover {
+  background-color: #494;
+}

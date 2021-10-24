@@ -9,6 +9,83 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
     <title>Fluff Stuff</title>
+
+    <script>
+        /* Set rates + misc */
+            var taxRate = 0.05;
+            var shippingRate = 15.00;
+            var fadeTime = 300;
+
+
+            /* Assign actions */
+            document.getElementById('.product-quantity input').change(function () {
+                updateQuantity(this);
+            });
+
+            document.getElementById('.product-removal button').click(function () {
+                removeItem(this);
+            });
+
+
+            /* Recalculate cart */
+            function recalculateCart() {
+                var subtotal = 0;
+
+                /* Sum up row totals */
+                document.getElementById('.product').each(function () {
+                    subtotal += parseFloat(document.getElementById(this).children('.product-line-price').text());
+                });
+
+                /* Calculate totals */
+                var tax = subtotal * taxRate;
+                var shipping = (subtotal > 0 ? shippingRate : 0);
+                var total = subtotal + tax + shipping;
+
+                /* Update totals display */
+                document.getElementById('.totals-value').fadeOut(fadeTime, function () {
+                    document.getElementById('#cart-subtotal').html(subtotal.toFixed(2));
+                    document.getElementById('#cart-tax').html(tax.toFixed(2));
+                    document.getElementById('#cart-shipping').html(shipping.toFixed(2));
+                    document.getElementById('#cart-total').html(total.toFixed(2));
+                    if (total == 0) {
+                        document.getElementById('.checkout').fadeOut(fadeTime);
+                    } else {
+                        document.getElementById('.checkout').fadeIn(fadeTime);
+                    }
+                    document.getElementById('.totals-value').fadeIn(fadeTime);
+                });
+            }
+
+
+            /* Update quantity */
+            function updateQuantity(quantityInput) {
+                /* Calculate line price */
+                var productRow = document.getElementById(quantityInput).parent().parent();
+                var price = parseFloat(productRow.children('.product-price').text());
+                var quantity = document.getElementById(quantityInput).val();
+                var linePrice = price * quantity;
+
+                /* Update line price display and recalc cart totals */
+                productRow.children('.product-line-price').each(function () {
+                    document.getElementById(this).fadeOut(fadeTime, function () {
+                        document.getElementById(this).text(linePrice.toFixed(2));
+                        recalculateCart();
+                        document.getElementById(this).fadeIn(fadeTime);
+                    });
+                });
+            }
+
+
+            /* Remove item from cart */
+            function removeItem(removeButton) {
+                /* Remove row from DOM and recalc cart total */
+                var productRow = document.getElementById(removeButton).parent().parent();
+                productRow.slideUp(fadeTime, function () {
+                    productRow.remove();
+                    recalculateCart();
+                });
+            }
+    </script>
 </head>
 
 <body class="container">
@@ -17,7 +94,7 @@
     </div>
     <div class="navigation">
         <div>
-            <a href="homepage.html" id="logo">Fluff Stuff</a>
+            <a href="index.html" id="logo">Fluff Stuff</a>
         </div>
         <nav>
             <ul class="navlist">
@@ -30,6 +107,89 @@
             </ul>
         </nav>
     </div>
+    <div class="shoppillows">
+        <div class="shoptext">
+            <h1>Your Cart</h1>
+            <p>Not ready to checkout? Continue Shopping</p>
+        </div>
+    </div>
+
+    <div class="shopping-cart">
+    
+        <div class="column-labels">
+            <label class="product-image">Image</label>
+            <label class="product-details">Product</label>
+            <label class="product-price">Price</label>
+            <label class="product-quantity">Quantity</label>
+            <label class="product-removal">Remove</label>
+            <label class="product-line-price">Total</label>
+        </div>
+    
+        <div class="product">
+            <div class="product-image">
+                <img src="images/h1.png">
+            </div>
+            <div class="product-details">
+                <div class="product-title">Longhui</div>
+                <p class="product-description">Yarn Color: After School Special; Foam: Memory Foam</p>
+            </div>
+            <div class="product-price">$99</div>
+            <div class="product-quantity">
+                <input type="number" value="2" min="1">
+            </div>
+            <div class="product-removal">
+                <button class="remove-product">
+                    Remove
+                </button>
+            </div>
+            <div class="product-line-price">$99</div>
+        </div>
+    
+        <div class="product" class="productdetails">
+            <div class="product-image">
+                <img src="images/h2.png">
+            </div>
+            <div class="product-details">
+                <div class="product-title">Limbhano</div>
+                <p class="product-description">Yarn Color: Morning Haze; Foam: Duckdown</p>
+            </div>
+            <div class="product-price">$99</div>
+            <div class="product-quantity">
+                <input type="number" value="1" min="1">
+            </div>
+            <div class="product-removal">
+                <button class="remove-product">
+                    Remove
+                </button>
+            </div>
+            <div class="product-line-price">$99</div>
+        </div>
+    
+        <div class="totals">
+            <div class="totals-item">
+                <label>Subtotal</label>
+                <div class="totals-value" id="cart-subtotal">$198.0</div>
+            </div>
+            <div class="totals-item">
+                <label>Tax (5%)</label>
+                <div class="totals-value" id="cart-tax">$9.90</div>
+            </div>
+            <div class="totals-item">
+                <label>Shipping</label>
+                <div class="totals-value" id="cart-shipping">$15.0</div>
+            </div>
+            <div class="totals-item totals-item-total">
+                <label>Grand Total</label>
+                <div class="totals-value" id="cart-total">$222.0</div>
+            </div>
+        </div>
+    
+        <a href="cart.html" class="buybutton">Continue to Checkout</a>
+        <!-- <a href="cart.html" class="buybutton">Buy Now</a> -->
+        <!-- <button class="checkout">Checkout</button> -->
+    
+    </div>
+
 </body>
 
 </html>
