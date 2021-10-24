@@ -724,6 +724,10 @@ styling and onhover styling  */
   border: solid black;
 }
 
+#formargin {
+  margin-top: 500px;
+}
+
 /* *************************** CART PAGE ONLY ********************************************/
 .product-image {
   float: left;
