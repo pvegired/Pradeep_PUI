@@ -1,120 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
-    <title>Fluff Stuff</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+        <title>Fluff Stuff</title>
 
-<script type="text/javascript" src="javascript.js"></script>
-</head>
+    <script type="text/javascript" src="javascript.js"></script>
+    </head>
 
-<body class="container">
-    <div class="popup">
-        <p>Free Shipping on all pillows! September 26-30</p>
-    </div>
-    <div class="navigation">
-        <div>
-            <a href="index.html" id="logo">Fluff Stuff</a>
+    <body>
+        <div class="popup">
+            <p>Free Shipping on all pillows! September 26-30</p>
         </div>
-        <nav>
-            <ul class="navlist">
-                <li><a href="productbrowsing.html">Shop</a></li>
-                <li><a href="pickingassistant.html">Picking Assistant</a></li>
-                <li><a href="#!">About</a></li>
-                <li><a href="#!">Search</a></li>
-                <li><a href="cart.html">Cart</a></li>
-                <li><a href="#!">Login</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="shoppillows">
-        <div class="shoptext">
-            <h1>Your Cart</h1>
-            <p>Not ready to checkout? Continue Shopping</p>
+        <div class="navigation">
+            <div>
+                <a href="index.html" id="logo">Fluff Stuff</a>
+            </div>
+            <nav>
+                <ul class="navlist">
+                    <li><a href="productbrowsing.html">Shop</a></li>
+                    <li><a href="pickingassistant.html">Picking Assistant</a></li>
+                    <li><a href="#!">About</a></li>
+                    <li><a href="#!">Search</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="#!">Login</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+        <div class="shoppillows">
+            <div class="shoptext">
+                <h1>Your Cart</h1>
+                <p>Not ready to checkout? Continue Shopping</p>
+            </div>
+        </div>
 
-    <div class="shopping-cart">
-    
-        <div class="column-labels">
-            <label class="product-image">Image</label>
-            <label class="product-details">Product</label>
-            <label class="product-price">Price</label>
-            <label class="product-quantity">Quantity</label>
-            <label class="product-removal">Remove</label>
-            <label class="product-line-price">Total</label>
-        </div>
-    
-        <div class="product">
-            <div class="product-image">
-                <img src="images/h1.png">
+            <div class="cart">
+                <div class="column-labels">
+                    <label class="product-image">Image</label>
+                    <label class="product-details">Product</label>
+                    <label class="product-price">Price</label>
+                    <label class="product-quantity">Quantity</label>
+                    <label class="product-removal">Remove</label>
+                    <label class="product-line-price">Total</label>
+                </div>
+            
+                <div class="cartitem">
+                    <div class="cartitemimage">
+                        <img src="images/h1.png">
+                    </div>
+                    <div class="cartitemdetails">
+                        <div class="product-title">Longhui</div>
+                        <p class="product-description">Yarn Color: After School Special; Foam: Memory Foam</p>
+                    </div>
+                    <div class="cartitemprice">$99</div>
+                    <div class="product-quantity">
+                        <input type="number" value="1" min="1">
+                    </div>
+                    <div class="cartitemremove">
+                        <button class="remove-product">
+                            Remove
+                        </button>
+                    </div>
+                    <div class="cartitemprice">$99</div>
+                </div>
+            
+                <div class="cartitem">
+                    <div class="cartitemimage">
+                        <img src="images/h2.png">
+                    </div>
+                    <div class="cartitemdetails">
+                        <div class="product-title">Limbhano</div>
+                        <p class="product-description">Yarn Color: Morning Haze; Foam: Duckdown</p>
+                    </div>
+                    <div class="cartitemprice">$99</div>
+                    <div class="product-quantity">
+                        <input type="number" value="1" min="1">
+                    </div>
+                    <div class="cartitemremove">
+                        <button class="remove-product">
+                            Remove
+                        </button>
+                    </div>
+                    <div class="cartitemprice">$99</div>
+                </div>
+            
+                <div class="totals">
+                    <div class="totals-item">
+                        <label>Subtotal</label>
+                        <div class="totals-value" id="cart-subtotal">$198.0</div>
+                    </div>
+                    <div class="totals-item">
+                        <label>Tax (5%)</label>
+                        <div class="totals-value" id="cart-tax">$9.90</div>
+                    </div>
+                    <div class="totals-item">
+                        <label>Shipping</label>
+                        <div class="totals-value" id="cart-shipping">$15.0</div>
+                    </div>
+                    <div class="totals-item totals-item-total">
+                        <label>Grand Total</label>
+                        <div class="totals-value" id="cart-total">$222.0</div>
+                    </div>
+                </div>
+            
+                <a href="cart.html" class="buybutton">Continue to Checkout</a>
+                <!-- <a href="cart.html" class="buybutton">Buy Now</a> -->
+                <!-- <button class="checkout">Checkout</button> -->
+            
             </div>
-            <div class="product-details">
-                <div class="product-title">Longhui</div>
-                <p class="product-description">Yarn Color: After School Special; Foam: Memory Foam</p>
-            </div>
-            <div class="product-price">$99</div>
-            <div class="product-quantity">
-                <input type="number" value="2" min="1">
-            </div>
-            <div class="product-removal">
-                <button class="remove-product">
-                    Remove
-                </button>
-            </div>
-            <div class="product-line-price">$99</div>
-        </div>
-    
-        <div class="product" class="productdetails">
-            <div class="product-image">
-                <img src="images/h2.png">
-            </div>
-            <div class="product-details">
-                <div class="product-title">Limbhano</div>
-                <p class="product-description">Yarn Color: Morning Haze; Foam: Duckdown</p>
-            </div>
-            <div class="product-price">$99</div>
-            <div class="product-quantity">
-                <input type="number" value="1" min="1">
-            </div>
-            <div class="product-removal">
-                <button class="remove-product">
-                    Remove
-                </button>
-            </div>
-            <div class="product-line-price">$99</div>
-        </div>
-    
-        <div class="totals">
-            <div class="totals-item">
-                <label>Subtotal</label>
-                <div class="totals-value" id="cart-subtotal">$198.0</div>
-            </div>
-            <div class="totals-item">
-                <label>Tax (5%)</label>
-                <div class="totals-value" id="cart-tax">$9.90</div>
-            </div>
-            <div class="totals-item">
-                <label>Shipping</label>
-                <div class="totals-value" id="cart-shipping">$15.0</div>
-            </div>
-            <div class="totals-item totals-item-total">
-                <label>Grand Total</label>
-                <div class="totals-value" id="cart-total">$222.0</div>
-            </div>
-        </div>
-    
-        <a href="cart.html" class="buybutton">Continue to Checkout</a>
-        <!-- <a href="cart.html" class="buybutton">Buy Now</a> -->
-        <!-- <button class="checkout">Checkout</button> -->
-    
-    </div>
-
-</body>
-
 </html>

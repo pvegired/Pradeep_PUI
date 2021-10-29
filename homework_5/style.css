@@ -667,11 +667,12 @@ that make fluffstuff unique */
   list-style: none;
   display: flex;
   flex-direction: row;
+  background-color: teal;
 }
 
-.productdetails ul li {
+/* .productdetails ul li {
   margin: 0.2em;
-}
+} */
 
 /* css just for logo and logo hover change  */
 .buybutton {
@@ -690,6 +691,11 @@ that make fluffstuff unique */
 .buybutton:hover {
   color: white;
   border: 0.05em solid black;
+}
+
+.productdetails ul input {
+  background-color: steelblue;
+  margin: 0.4rem 0;
 }
 
 /* *************************** PICKING ASSISTANT PAGE ONLY ********************************************/
@@ -749,6 +755,22 @@ styling and onhover styling  */
 }
 
 /* *************************** CART PAGE ONLY ********************************************/
+/* .cart { */
+/* margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px; */
+/* background-color: teal;
+  height: 1000px; */
+
+.cart {
+  width: 100%;
+  height: 20em;
+  display: block;
+  position: relative;
+  background-color: black;
+}
+
 .product-image {
   float: left;
   width: 20%;
@@ -791,13 +813,6 @@ styling and onhover styling  */
 /* label {
   color: $color-label;
 } */
-
-.shopping-cart {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  margin-left: 50px;
-}
 
 /* Column headers */
 .column-labels .label {
