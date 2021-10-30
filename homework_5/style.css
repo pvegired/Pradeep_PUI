@@ -569,6 +569,33 @@ input[type="reset"] {
 }
 
 /* *************************** PRODUCT DETAIL PAGE ONLY ********************************************/
+.broductsrow {
+  margin-left: 2%;
+  margin-right: 2%;
+  height: 60em;
+  margin-top: 5%;
+}
+
+.broductsrow ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 1em;
+}
+
+.broductsrow ul li {
+  list-style: none;
+}
+
+/* #productimage ul {
+  /* display: flex;
+  flex-direction: row; */
+/* justify-content: flex-start;}
+*/
+
+#broductimage ul li {
+  margin: 0.2em;
+}
 
 /* css for why fluff stuff 
  and features container */
@@ -762,6 +789,17 @@ styling and onhover styling  */
   margin-left: 50px; */
 /* background-color: teal;
   height: 1000px; */
+#continueshopping {
+  background-color: teal;
+}
+
+.image1 {
+  position: absolute;
+  width: 128px;
+  height: 133px;
+  left: 144px;
+  top: 295px;
+}
 
 .cart {
   width: 100%;

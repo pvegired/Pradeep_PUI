@@ -557,6 +557,41 @@ styling and onhover styling  */
 }
 
 /* *************************** PRODUCT DETAIL PAGE ONLY ********************************************/
+.w3-button {
+  margin-top: 100%;
+}
+
+.broductsrow {
+  margin-left: 2%;
+  margin-right: 2%;
+  height: 60em;
+  margin-top: 5%;
+}
+
+.broductsrow .broductrow {
+  display: flex;
+  flex-direction: row;
+}
+
+.broductsrow ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 1em;
+}
+
+.broductsrow ul li {
+  list-style: none;
+}
+
+#broductimage ul {
+  display: flex;
+  flex-direction: row;
+}
+
+#broductimage ul li {
+  margin: 0.2em;
+}
 
 /* css for why fluff stuff 
  and features container */
