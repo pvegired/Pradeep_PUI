@@ -119,6 +119,7 @@ function disableButton3() {
             }
         }
 
+        var x = 99;
 
         // /* Set rates + misc */
         //     var taxRate = 0.05;
