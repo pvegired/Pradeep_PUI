@@ -154,7 +154,46 @@ function addToCartClick(event) {
     var title =  shopItem.getElementsByClassName('shop-item-title')[0].innerText
     var price =  shopItem.getElementsByClassName('shop-item-price')[0].innerText
     var imgSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
-    console.log(title, price, imgSrc)
+    var foamOption = "Duck Down"
+    var colorOption = "After School Special"
+    addCartItem(title, price, imgSrc, colorOption, foamOption)
+}
+
+function addCartItem(title, price, imgSrc, colorOption, foamOption) {
+
+    var cartitem = document.createElement('div')
+    cartitem.classList.add('cart')
+    var cartItems = document.getElementsByClassName('cart')[0]
+    console.log(title, price, imgSrc, colorOption, foamOption)
+    var cartItemContent = `
+    <div class="cartitemimage">
+                        <img src="${imgSrc}"
+                            id="image1" width="200" height="200">
+                    </div>
+                    <div class="cartitemdetails">
+                        <div class="product-title">${title}</div>
+                        <p class="product-description">Yarn Color:<br> ${colorOption}; Foam:<br> ${foamOption}</p>
+                    </div>
+                    <div class="cartitemprice">
+                        ${price}
+                    </div>
+                    <div class="product-quantity">
+                        <input type="number" value="1" min="1" class="product-quantity1">
+                    </div>
+                    <div class="cartitemremove">
+                        <button class="remove-product" type="button">
+                            Delete
+                        </button>
+                    </div>
+                    <div class="cartitemprice">
+                        $99
+                    </div>
+    `
+    list.getElementsByClassName("child")[0].innerHTML = "Milk";
+
+
+    cartitem.innerHTML = cartItemContent;
+    cartItems.append(cartitem)
 }
 
 
