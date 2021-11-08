@@ -60,7 +60,17 @@
             <h2>$99</h2>
             <br>
             <h3> Color Options</h3>
-            <ul>
+            <form>
+                  <input type="radio" id="afterschoolspecial" name="coloroptions" value="afterschoolspecial">
+                  <label for="afterschoolspecial">After School Special</label><br>
+                  <input type="radio" id="morninghaze" name="coloroptions" value="morninghaze">
+                  <label for="morninghaze">Morning Haze</label><br>
+                  <input type="radio" id="cozydenim" name="coloroptions" value="cozydenim">
+                  <label for="cozydenim">Cozy Denim</label><br>
+                  <input type="radio" id="rainyday" name="coloroptions" value="rainyday">
+                  <label for="rainyday">Rainy Day</label><br>
+            </form>
+            <!-- <ul> -->
                     <!-- <li><a href="#!"><img src="images/ButtonOutlined.png" alt="After School special" width="30" height="30"  onclick="afterschoolspecial(); return false;"></a>
                     </li>
                     <li><a href="#!"><img src="images/ButtonOutlined1.png" alt="Morning Haze" width="30" height="30" onclick="morninghaze(); return false;"></a>
@@ -69,11 +79,11 @@
                     </li>
                     <li><a href="#!"><img src="images/ButtonOutlined3.png" alt="Rainy Day" width="30" height="30" onclick="rainyday(); return false;"></a>
                     </li> -->
-                    <li><input type="button" value="After School Special" onclick="afterschoolspecial()" id="button_example"></li>
-                    <li><input type="button" value="Morning Haze" onclick="morninghaze()" id="button_example1"></li>
-                    <li><input type="button" value="Cozy Denim" onclick="cozydenim()" id="button_example2"></li>
-                    <li><input type="button" value="Rainy Day" onclick="rainyday()" id="button_example3"></li>
-                </ul>
+                    <!-- <li><input type="button" value="After School Special" onclick="afterschoolspecial()" id="button_example" class = "button"></li>
+                    <li><input type="button" value="Morning Haze" onclick="morninghaze()" id="button_example1" class = "button"></li>
+                    <li><input type="button" value="Cozy Denim" onclick="cozydenim()" id="button_example2" class = "button"></li>
+                    <li><input type="button" value="Rainy Day" onclick="rainyday()" id="button_example3" class = "button"></li> -->
+                <!-- </ul> -->
             <br>
             <!-- <form>
                 <input type="button" value="After School Special" onclick="afterschoolspecial()" id="button_example">
@@ -83,18 +93,28 @@
             </form> -->
             <br>
             <h3> Foam Options</h3>
-            <ul>
-                <li><input type="button" value="Duck Down" class="favorite styled" onclick="afterschoolspecial()"></li>
-                <li><input type="button" value="Hypoallergenic Polyblend" onclick="morninghaze()"></li>
-                <li><input type="button" value="Memory Foam" onclick="cozydenim()"></li>
-            </ul>
+            <form>
+                  <input type="radio" id="duckdown" name="foamoptions" value="duckdown">
+                  <label for="duckdown">Duck Down</label><br>
+                  <input type="radio" id="hypoallergenciblend" name="foamoptions" value="hypoallergnenicblend">
+                  <label for="hypoallergenciblend">Hypoallergenic Blend</label><br>
+                  <input type="radio" id="memoryfoam" name="foamoptions" value="memoryfoam">
+                  <label for="memoryfoam">Memory Foam</label><br>
+            </form>
+            <!-- <ul>
+                <li><input type="button" value="Duck Down" onclick="afterschoolspecial()" class = "button"></li>
+                <li><input type="button" value="Hypoallergenic Polyblend" onclick="morninghaze()" class = "button"></li>
+                <li><input type="button" value="Memory Foam" onclick="cozydenim()" class = "button"></li>
+            </ul> -->
             <br>
             <div>
                 <!-- <a href="cart.html" class="buybutton"><input type="button" value="Add to Cart"></a> -->
                 <form>
-                    <input id="addtocart" type="button" value="Add to Cart" onclick="updateButton()">
+                    <input id="addtocart" type="button" value="Add to Cart" onclick="updateButton()" class = "button">
                     <!-- <input class='button -dark center' type="button" value="Buy Now"> -->
-                    <button class="custom-button example-2"><a href="cart.html">Buy Now</a></button>
+
+                    <br>
+                    <button class="custom-button example-2" class = "button"><a href="cart.html">Buy Now</a></button>
                 </form>
                 <!-- <button class="custom-button example-2"><a href="cart.html">Buy Now</a></button> -->
                 <!-- <a href="cart.html" class="buybutton">Buy Now</a> -->
@@ -113,198 +133,52 @@
         <!-- <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button> -->
         <div>
             <ul class="broductrow">
-                <li><button class="w3-button" onclick="plusDivs(-1)">Previous</button></li>
+                <li><button class="button" onclick="plusDivs(-1)">Previous</button></li>
                 <li id="broductimage">
                     <a href="productdetail.html"><img src="images/h1.png" alt="yellow pillow" width="250" height="250"></a>
                     <p>Longhui</p>
                     <p><strong>99$</strong></p>
-                    <!-- <ul>
-                        <li><a href="#!"><img src="images/ButtonOutlined.png" alt="blue color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined1.png" alt="brown color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined2.png" alt="violet color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined3.png" alt="cream color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined4.png" alt="green color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined.png" alt="blue color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined1.png" alt="brown color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined2.png" alt="violet color" width="20" height="20"></a>
-                        </li>
-                    </ul> -->
                 </li>
                 <li>
                     <a href="#!"><img src="images/h2.png" alt="black pillow" width="250" height="250"></a>
                     <p>Longhui</p>
                     <p><strong>99$</strong></p>
-                    <!-- <ul>
-                        <li><a href="#!"><img src="images/ButtonOutlined.png" alt="blue color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined1.png" alt="brown color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined2.png" alt="violet color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined3.png" alt="cream color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined4.png" alt="green color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined.png" alt="blue color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined1.png" alt="brown color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined2.png" alt="violet color" width="20" height="20"></a>
-                        </li>
-                    </ul> -->
                 </li>
                 <li>
                     <a href="#!"><img src="images/h3.png" alt="white pillow" width="250" height="250"></a>
                     <p>Longhui</p>
                     <p><strong>99$</strong></p>
-                    <!-- <ul>
-                        <li><a href="#!"><img src="images/ButtonOutlined.png" alt="blue color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined1.png" alt="brown color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined2.png" alt="violet color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined3.png" alt="cream color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined4.png" alt="green color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined.png" alt="blue color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined1.png" alt="brown color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined2.png" alt="violet color" width="20" height="20"></a>
-                        </li>
-                    </ul> -->
                 </li>
                 <li>
                     <a href="#!"><img src="images/t1.png" alt="yellow pillow" width="250" height="250"></a>
                     <p>Longhui</p>
                     <p><strong>99$</strong></p>
-                    <!-- <ul>
-                        <li><a href="#!"><img src="images/ButtonOutlined.png" alt="blue color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined1.png" alt="brown color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined2.png" alt="violet color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined3.png" alt="cream color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined4.png" alt="green color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined.png" alt="blue color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined1.png" alt="brown color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined2.png" alt="violet color" width="20" height="20"></a>
-                        </li>
-                    </ul> -->
                 </li>
-                <li><button class="w3-button" onclick="plusDivs(-1)">Next</button></li>
+                <li><button class="button" onclick="plusDivs(-1)">Next</button></li>
             </ul>
             <ul class="broductrow">
-                <li><button class="w3-button" onclick="plusDivs(-1)">Previous</button></li>
+                <li><button class="button" onclick="plusDivs(-1)">Previous</button></li>
                 <li id="broductimage">
                     <a href="productdetail.html"><img src="images/t2.png" alt="yellow pillow" width="250" height="250"></a>
                     <p>Longhui</p>
                     <p><strong>99$</strong></p>
-                    <!-- <ul>
-                        <li><a href="#!"><img src="images/ButtonOutlined.png" alt="blue color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined1.png" alt="brown color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined2.png" alt="violet color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined3.png" alt="cream color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined4.png" alt="green color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined.png" alt="blue color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined1.png" alt="brown color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined2.png" alt="violet color" width="20" height="20"></a>
-                        </li>
-                    </ul> -->
                 </li>
                 <li>
                     <a href="#!"><img src="images/t3.png" alt="black pillow" width="250" height="250"></a>
                     <p>Longhui</p>
                     <p><strong>99$</strong></p>
-                    <!-- <ul>
-                        <li><a href="#!"><img src="images/ButtonOutlined.png" alt="blue color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined1.png" alt="brown color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined2.png" alt="violet color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined3.png" alt="cream color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined4.png" alt="green color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined.png" alt="blue color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined1.png" alt="brown color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined2.png" alt="violet color" width="20" height="20"></a>
-                        </li>
-                    </ul> -->
-                </li>
                 <li>
                     <a href="#!"><img src="images/t4.png" alt="white pillow" width="250" height="250"></a>
                     <p>Longhui</p>
                     <p><strong>99$</strong></p>
-                    <!-- <ul>
-                        <li><a href="#!"><img src="images/ButtonOutlined.png" alt="blue color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined1.png" alt="brown color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined2.png" alt="violet color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined3.png" alt="cream color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined4.png" alt="green color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined.png" alt="blue color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined1.png" alt="brown color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined2.png" alt="violet color" width="20" height="20"></a>
-                        </li>
-                    </ul> -->
                 </li>
                 <li>
                     <a href="#!"><img src="images/h1.png" alt="yellow pillow" width="250" height="250"></a>
                     <p>Longhui</p>
                     <p><strong>99$</strong></p>
-                    <!-- <ul>
-                        <li><a href="#!"><img src="images/ButtonOutlined.png" alt="blue color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined1.png" alt="brown color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined2.png" alt="violet color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined3.png" alt="cream color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined4.png" alt="green color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined.png" alt="blue color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined1.png" alt="brown color" width="20" height="20"></a>
-                        </li>
-                        <li><a href="#!"><img src="images/ButtonOutlined2.png" alt="violet color" width="20" height="20"></a>
-                        </li>
-                    </ul> -->
                 </li>
-                <li><button class="w3-button" onclick="plusDivs(-1)">Next</button></li>
+                <li><button class="button" onclick="plusDivs(-1)">Next</button></li>
             </ul>
-            <!-- <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10095;</button> -->
         </div>
     </div>
     <script>

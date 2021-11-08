@@ -759,6 +759,32 @@ styling and onhover styling  */
   border: solid black;
 }
 
+.button {
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:focus {
+  background-color: black;
+  border: 1px solid black;
+  color: White;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
 /* *************************** CART PAGE ONLY ********************************************/
 
 .cart {
