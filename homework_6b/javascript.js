@@ -138,7 +138,6 @@ function ready (){
     var quantityInputs = document.getElementsByClassName("product-quantity1")
     for (var i=0; i<quantityInputs.length ; i++){
         var input = quantityInputs[i]
-        console.log(input)
         input.addEventListener('change', quantityChanged)
     }
     var addToCartButtons = document.getElementsByClassName('shop-item-button')
@@ -189,8 +188,7 @@ function addCartItem(title, price, imgSrc, colorOption, foamOption) {
                         $99
                     </div>
     `
-    list.getElementsByClassName("child")[0].innerHTML = "Milk";
-
+    
 
     cartitem.innerHTML = cartItemContent;
     cartItems.append(cartitem)
@@ -224,13 +222,12 @@ function updateTotal() {
         var cartLine = cartItem[i]
         var price = cartLine.getElementsByClassName('cartitemprice')[0]
         var quantity = cartLine.getElementsByClassName('product-quantity1')[0]
-        console.log(price,quantity)
         var priceNumber = parseFloat(price.innerText.replace('$', ''))
         var quantityNumber = quantity.value
         total = total + (priceNumber * quantityNumber)
-        console.log(priceNumber * quantityNumber)
     }
     document.getElementById('cart-subtotal').innerText = '$' + total
+    
     document.getElementById('cart-shipping').innerText = '$' + shippingRate
     document.getElementById('cart-tax').innerText = '$' + Math.round((total * taxRate) * 100)/100
     document.getElementById('cart-total').innerText = '$' + (total + shippingRate + (total * taxRate)) 
