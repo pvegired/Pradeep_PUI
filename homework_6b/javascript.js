@@ -4,7 +4,23 @@
             ready ()
         }
 
+        var slideIndex = 1;
+        showDivs(slideIndex);
 
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("broductrow");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "flex";
+        }
 
 
 function afterschoolspecial() {
@@ -143,7 +159,18 @@ function ready (){
         console.log(input)
         input.addEventListener('change', quantityChanged)
     }
+    var addToCartButtons = document.getElementsByClassName('shop-item-button')
+    for (var i=0; i<addToCartButtons.length; i++) {
+        var button = addToCartButtons[i]
+        button.addEventListener('click', addToCartClick)
     }
+    }
+
+// function addToCartClick(event) {
+//     var button = event.target
+//     var  
+// }
+
 
 function quantityChanged(event) {
     var input = event.target

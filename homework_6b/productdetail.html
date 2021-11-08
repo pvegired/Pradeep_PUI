@@ -28,10 +28,7 @@
             <ul class="navlist">
                 <li><a href="productbrowsing.html">Shop</a></li>
                 <li><a href="pickingassistant.html">Picking Assistant</a></li>
-                <li><a href="#!">About</a></li>
-                <li><a href="#!">Search</a></li>
                 <li><a href="cart.html" >Cart <p id="navcartitems"></p></a></li>
-                <li><a href="#!">Login</a></li>
             </ul>
         </nav>
     </div>
@@ -110,7 +107,7 @@
             <div>
                 <!-- <a href="cart.html" class="buybutton"><input type="button" value="Add to Cart"></a> -->
                 <form>
-                    <input id="addtocart" type="button" value="Add to Cart" onclick="updateButton()" class = "button">
+                    <input id="addtocart" type="button" value="Add to Cart" onclick="updateButton()" class = "button shop-item-button">
                     <!-- <input class='button -dark center' type="button" value="Buy Now"> -->
 
                     <br>
@@ -138,21 +135,25 @@
                     <a href="productdetail.html"><img src="images/h1.png" alt="yellow pillow" width="250" height="250"></a>
                     <p>Longhui</p>
                     <p><strong>99$</strong></p>
+                    <input type="button" value="Add to Cart" class="button shop-item-button">
                 </li>
                 <li>
                     <a href="#!"><img src="images/h2.png" alt="black pillow" width="250" height="250"></a>
                     <p>Longhui</p>
                     <p><strong>99$</strong></p>
+                    <input type="button" value="Add to Cart" class="button shop-item-button">
                 </li>
                 <li>
                     <a href="#!"><img src="images/h3.png" alt="white pillow" width="250" height="250"></a>
                     <p>Longhui</p>
                     <p><strong>99$</strong></p>
+                    <input type="button" value="Add to Cart" class="button shop-item-button">
                 </li>
                 <li>
                     <a href="#!"><img src="images/t1.png" alt="yellow pillow" width="250" height="250"></a>
                     <p>Longhui</p>
                     <p><strong>99$</strong></p>
+                    <input type="button" value="Add to Cart" class="button shop-item-button">
                 </li>
                 <li><button class="button" onclick="plusDivs(-1)">Next</button></li>
             </ul>
@@ -162,20 +163,24 @@
                     <a href="productdetail.html"><img src="images/t2.png" alt="yellow pillow" width="250" height="250"></a>
                     <p>Longhui</p>
                     <p><strong>99$</strong></p>
+                    <input type="button" value="Add to Cart" class="button shop-item-button">
                 </li>
                 <li>
                     <a href="#!"><img src="images/t3.png" alt="black pillow" width="250" height="250"></a>
                     <p>Longhui</p>
                     <p><strong>99$</strong></p>
+                    <input type="button" value="Add to Cart" class="button shop-item-button">
                 <li>
                     <a href="#!"><img src="images/t4.png" alt="white pillow" width="250" height="250"></a>
                     <p>Longhui</p>
                     <p><strong>99$</strong></p>
+                    <input type="button" value="Add to Cart" class="button shop-item-button">
                 </li>
                 <li>
                     <a href="#!"><img src="images/h1.png" alt="yellow pillow" width="250" height="250"></a>
                     <p>Longhui</p>
                     <p><strong>99$</strong></p>
+                    <input type="button" value="Add to Cart" class="button shop-item-button">
                 </li>
                 <li><button class="button" onclick="plusDivs(-1)">Next</button></li>
             </ul>
@@ -184,21 +189,6 @@
     <script>
         var slideIndex = 1;
         showDivs(slideIndex);
-
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("broductrow");
-            if (n > x.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = x.length }
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            x[slideIndex - 1].style.display = "flex";
-        }
     </script>
 </body>
 
