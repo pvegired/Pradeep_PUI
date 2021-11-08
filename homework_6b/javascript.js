@@ -143,6 +143,13 @@ function ready (){
     var addToCartButtons = document.getElementsByClassName('shop-item-button')
     for (var i=0; i<addToCartButtons.length; i++) {
         var button = addToCartButtons[i]
+        
+        
+        // localStorage.setItem("title", title);
+        // localStorage.setItem("price", price);
+        // localStorage.setItem("imgSrc", imgSrc);
+        // localStorage.setItem("foamOption", foamOption);
+        // localStorage.setItem("colorOption", colorOption);
         button.addEventListener('click', addToCartClick)
     }
     }
@@ -150,20 +157,28 @@ function ready (){
 function addToCartClick(event) {
     var button = event.target
     var shopItem = button.parentElement
-    var title =  shopItem.getElementsByClassName('shop-item-title')[0].innerText
-    var price =  shopItem.getElementsByClassName('shop-item-price')[0].innerText
-    var imgSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
-    var foamOption = "Duck Down"
-    var colorOption = "After School Special"
-    addCartItem(title, price, imgSrc, colorOption, foamOption)
+        var title =  shopItem.getElementsByClassName('shop-item-title')[0].innerText
+        var price =  shopItem.getElementsByClassName('shop-item-price')[0].innerText
+        var imgSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
+        var foamOption = "Duck Down"
+        var colorOption = "After School Special"
+        addCartItem(title, price, imgSrc, colorOption, foamOption)
+        updateTotal()
+
 }
 
 function addCartItem(title, price, imgSrc, colorOption, foamOption) {
-
     var cartitem = document.createElement('div')
-    cartitem.classList.add('cart')
+    cartitem.classList.add('cartitem')
+    
     var cartItems = document.getElementsByClassName('cart')[0]
-    console.log(title, price, imgSrc, colorOption, foamOption)
+    var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
+    for (var i=0; i<cartItemNames.length; i++) {
+        if (cartItemNames[i].innerText == title) {
+            alert("This Item is already added to the cart")
+            return
+        }
+    }
     var cartItemContent = `
     <div class="cartitemimage">
                         <img src="${imgSrc}"
@@ -184,14 +199,14 @@ function addCartItem(title, price, imgSrc, colorOption, foamOption) {
                             Delete
                         </button>
                     </div>
-                    <div class="cartitemprice">
-                        $99
-                    </div>
     `
     
 
     cartitem.innerHTML = cartItemContent;
     cartItems.append(cartitem)
+    cartitem.getElementsByClassName('remove-product')[0].addEventListener('click', removeCartItem)
+    cartitem.getElementsByClassName('product-quantity1')[0].addEventListener('change', quantityChanged)
+
 }
 
 
@@ -213,6 +228,7 @@ function removeCartItem(event) {
 
 function updateTotal() {
     var cart = document.getElementsByClassName('cart')[0]
+    localStorage.setItem("cart", cart)
     var cartItem = cart.getElementsByClassName('cartitem')
     var total = 0
     var taxRate = 0.05;
