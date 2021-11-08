@@ -4,24 +4,6 @@
             ready ()
         }
 
-        var slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("broductrow");
-            if (n > x.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = x.length }
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            x[slideIndex - 1].style.display = "flex";
-        }
-
 
 function afterschoolspecial() {
             var mainimage = document.getElementById('mainimage');
@@ -166,10 +148,14 @@ function ready (){
     }
     }
 
-// function addToCartClick(event) {
-//     var button = event.target
-//     var  
-// }
+function addToCartClick(event) {
+    var button = event.target
+    var shopItem = button.parentElement
+    var title =  shopItem.getElementsByClassName('shop-item-title')[0].innerText
+    var price =  shopItem.getElementsByClassName('shop-item-price')[0].innerText
+    var imgSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
+    console.log(title, price, imgSrc)
+}
 
 
 function quantityChanged(event) {
@@ -208,5 +194,5 @@ function updateTotal() {
     document.getElementById('cart-subtotal').innerText = '$' + total
     document.getElementById('cart-shipping').innerText = '$' + shippingRate
     document.getElementById('cart-tax').innerText = '$' + Math.round((total * taxRate) * 100)/100
-    document.getElementById('cart-total').innerText = '$' + (total + shippingRate + (total * taxRate))
+    document.getElementById('cart-total').innerText = '$' + (total + shippingRate + (total * taxRate)) 
 }

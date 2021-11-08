@@ -132,27 +132,27 @@
             <ul class="broductrow">
                 <li><button class="button" onclick="plusDivs(-1)">Previous</button></li>
                 <li id="broductimage">
-                    <a href="productdetail.html"><img src="images/h1.png" alt="yellow pillow" width="250" height="250"></a>
-                    <p>Longhui</p>
-                    <p><strong>99$</strong></p>
+                    <a href="productdetail.html"><img src="images/h1.png" alt="yellow pillow" width="250" height="250" class = "shop-item-image"></a>
+                    <p class = "shop-item-title">Longhui</p>
+                    <p class = "shop-item-price"><strong>99$</strong></p>
                     <input type="button" value="Add to Cart" class="button shop-item-button">
                 </li>
                 <li>
-                    <a href="#!"><img src="images/h2.png" alt="black pillow" width="250" height="250"></a>
-                    <p>Longhui</p>
-                    <p><strong>99$</strong></p>
+                    <a href="#!"><img src="images/h2.png" alt="black pillow" width="250" height="250" class = "shop-item-image"></a>
+                    <p class = "shop-item-title">Shopiaro</p>
+                    <p class = "shop-item-price"><strong>99$</strong></p>
                     <input type="button" value="Add to Cart" class="button shop-item-button">
                 </li>
                 <li>
-                    <a href="#!"><img src="images/h3.png" alt="white pillow" width="250" height="250"></a>
-                    <p>Longhui</p>
-                    <p><strong>99$</strong></p>
+                    <a href="#!"><img src="images/h3.png" alt="white pillow" width="250" height="250" class = "shop-item-image"></a>
+                    <p class = "shop-item-title">Meusli</p>
+                    <p class = "shop-item-price"><strong>99$</strong></p>
                     <input type="button" value="Add to Cart" class="button shop-item-button">
                 </li>
                 <li>
-                    <a href="#!"><img src="images/t1.png" alt="yellow pillow" width="250" height="250"></a>
-                    <p>Longhui</p>
-                    <p><strong>99$</strong></p>
+                    <a href="#!"><img src="images/t1.png" alt="yellow pillow" width="250" height="250" class = "shop-item-image"></a>
+                    <p class = "shop-item-title">Miano</p>
+                    <p class = "shop-item-price"><strong>99$</strong></p>
                     <input type="button" value="Add to Cart" class="button shop-item-button">
                 </li>
                 <li><button class="button" onclick="plusDivs(-1)">Next</button></li>
@@ -160,26 +160,26 @@
             <ul class="broductrow">
                 <li><button class="button" onclick="plusDivs(-1)">Previous</button></li>
                 <li id="broductimage">
-                    <a href="productdetail.html"><img src="images/t2.png" alt="yellow pillow" width="250" height="250"></a>
-                    <p>Longhui</p>
-                    <p><strong>99$</strong></p>
+                    <a href="productdetail.html"><img src="images/t2.png" alt="yellow pillow" width="250" height="250" class = "shop-item-image"></a>
+                    <p class = "shop-item-title">Korunga</p>
+                    <p class = "shop-item-price"><strong>99$</strong></p>
                     <input type="button" value="Add to Cart" class="button shop-item-button">
                 </li>
                 <li>
-                    <a href="#!"><img src="images/t3.png" alt="black pillow" width="250" height="250"></a>
-                    <p>Longhui</p>
-                    <p><strong>99$</strong></p>
+                    <a href="#!"><img src="images/t3.png" alt="black pillow" width="250" height="250" class = "shop-item-image"></a>
+                    <p class = "shop-item-title">Lamobchi</p>
+                    <p class = "shop-item-price"><strong>99$</strong></p>
                     <input type="button" value="Add to Cart" class="button shop-item-button">
                 <li>
-                    <a href="#!"><img src="images/t4.png" alt="white pillow" width="250" height="250"></a>
-                    <p>Longhui</p>
-                    <p><strong>99$</strong></p>
+                    <a href="#!"><img src="images/t4.png" alt="white pillow" width="250" height="250" class = "shop-item-image"></a>
+                    <p class = "shop-item-title">Sumba</p>
+                    <p class = "shop-item-price"><strong>99$</strong></p>
                     <input type="button" value="Add to Cart" class="button shop-item-button">
                 </li>
                 <li>
-                    <a href="#!"><img src="images/h1.png" alt="yellow pillow" width="250" height="250"></a>
-                    <p>Longhui</p>
-                    <p><strong>99$</strong></p>
+                    <a href="#!"><img src="images/h1.png" alt="yellow pillow" width="250" height="250" class = "shop-item-image"></a>
+                    <p class = "shop-item-title">Minzo</p>
+                    <p class = "shop-item-price"><strong>99$</strong></p>
                     <input type="button" value="Add to Cart" class="button shop-item-button">
                 </li>
                 <li><button class="button" onclick="plusDivs(-1)">Next</button></li>
@@ -189,6 +189,24 @@
     <script>
         var slideIndex = 1;
         showDivs(slideIndex);
+
+        var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("broductrow");
+                if (n > x.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = x.length }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "flex";
+            }
     </script>
 </body>
 
